@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Our Family Tree · Vansh Vruksh</title>
+<meta name="description" content="A living, editable family tree — our roots, our journey, our people.">
+<meta name="theme-color" content="#12060b">
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2312060b'/%3E%3Cpath d='M32 54V30m0 0c-8-2-14-8-14-16m14 16c8-2 14-8 14-16M32 40c-6-1-10-5-11-10m11 10c6-1 10-5 11-10' stroke='%23e8b85a' stroke-width='3.5' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='32' cy='12' r='4' fill='%23ff9d2f'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Mulish:wght@400;500;600;700&family=Noto+Serif+Gujarati:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- icon sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f6dc98"/><stop offset="1" stop-color="#e8a23a"/></linearGradient>
+    <symbol id="i-nuk" viewBox="0 0 48 48"><g fill="none" stroke="url(#gold)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="12" r="5"/><circle cx="11" cy="36" r="5"/><circle cx="37" cy="36" r="5"/><path d="M21 16.5L13.5 31.5M27 16.5L34.5 31.5M16 36h16"/></g></symbol>
+    <symbol id="i-gotra" viewBox="0 0 48 48"><g fill="none" stroke="url(#gold)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M24 6c2 6 8 8 8 15a8 8 0 1 1-16 0c0-7 6-9 8-15z"/><path d="M24 44V30M17 38h14"/></g></symbol>
+    <symbol id="i-devi" viewBox="0 0 48 48"><g fill="none" stroke="url(#gold)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M24 8l3 7 7-3-2 8h-16l-2-8 7 3z"/><path d="M14 20h20l-2 10H16z"/><path d="M12 40h24M18 30v10M30 30v10"/></g></symbol>
+    <symbol id="i-isht" viewBox="0 0 48 48"><g fill="none" stroke="url(#gold)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 40h36M10 40V22l14-12 14 12v18"/><path d="M20 40V28a4 4 0 0 1 8 0v12M24 4v6"/></g></symbol>
+    <symbol id="i-pencil" viewBox="0 0 24 24"><path d="M4 20l1-4L16 5l3 3L8 19z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+  </defs>
+</svg>
+
+<canvas id="embers" aria-hidden="true"></canvas>
+
+<nav class="topnav" aria-label="Sections">
+  <a class="brand" href="#top"><svg viewBox="0 0 64 64" width="26" height="26"><path d="M32 54V30m0 0c-8-2-14-8-14-16m14 16c8-2 14-8 14-16M32 40c-6-1-10-5-11-10m11 10c6-1 10-5 11-10" stroke="url(#gold)" stroke-width="4" fill="none" stroke-linecap="round"/><circle cx="32" cy="11" r="4.5" fill="#ff9d2f"/></svg><span>Vansh Vruksh</span></a>
+  <div class="links">
+    <a href="#roots">Our Roots</a><a href="#journey">The Journey</a><a href="#lineage">Name &amp; Goddess</a><a href="#research">Research</a><a href="#archive">Archive Hunt</a>
+    <a class="cta" href="#tree">Family Tree</a>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<header class="hero" id="top">
+  <svg id="mandala" class="mandala" viewBox="-300 -300 600 600" aria-hidden="true">
+    <g fill="none" stroke="url(#gold)" stroke-width="1.2" opacity=".55">
+      <circle r="280"/><circle r="262" stroke-dasharray="2 7"/><circle r="205"/><circle r="130" stroke-dasharray="1 5"/>
+      <g class="petals a">
+        <path id="pet" d="M0-278C28-238 28-200 0-160C-28-200-28-238 0-278Z"/>
+        <use href="#pet" transform="rotate(15)"/><use href="#pet" transform="rotate(30)"/><use href="#pet" transform="rotate(45)"/><use href="#pet" transform="rotate(60)"/><use href="#pet" transform="rotate(75)"/><use href="#pet" transform="rotate(90)"/><use href="#pet" transform="rotate(105)"/><use href="#pet" transform="rotate(120)"/><use href="#pet" transform="rotate(135)"/><use href="#pet" transform="rotate(150)"/><use href="#pet" transform="rotate(165)"/><use href="#pet" transform="rotate(180)"/><use href="#pet" transform="rotate(195)"/><use href="#pet" transform="rotate(210)"/><use href="#pet" transform="rotate(225)"/><use href="#pet" transform="rotate(240)"/><use href="#pet" transform="rotate(255)"/><use href="#pet" transform="rotate(270)"/><use href="#pet" transform="rotate(285)"/><use href="#pet" transform="rotate(300)"/><use href="#pet" transform="rotate(315)"/><use href="#pet" transform="rotate(330)"/><use href="#pet" transform="rotate(345)"/>
+      </g>
+      <g class="petals b" stroke-width="1">
+        <path id="pet2" d="M0-200C18-172 18-148 0-122C-18-148-18-172 0-200Z"/>
+        <use href="#pet2" transform="rotate(22.5)"/><use href="#pet2" transform="rotate(45)"/><use href="#pet2" transform="rotate(67.5)"/><use href="#pet2" transform="rotate(90)"/><use href="#pet2" transform="rotate(112.5)"/><use href="#pet2" transform="rotate(135)"/><use href="#pet2" transform="rotate(157.5)"/><use href="#pet2" transform="rotate(180)"/><use href="#pet2" transform="rotate(202.5)"/><use href="#pet2" transform="rotate(225)"/><use href="#pet2" transform="rotate(247.5)"/><use href="#pet2" transform="rotate(270)"/><use href="#pet2" transform="rotate(292.5)"/><use href="#pet2" transform="rotate(315)"/><use href="#pet2" transform="rotate(337.5)"/>
+      </g>
+    </g>
+  </svg>
+  <div class="hero-in">
+    <p class="eyebrow">Raghuvanshi · Lohana heritage</p>
+    <p class="gu" lang="gu">વંશ વૃક્ષ</p>
+    <h1 id="heroTitle">Our Family Tree</h1>
+    <p class="tagline" id="heroTagline"></p>
+    <div class="hero-cta">
+      <a class="btn" href="#roots">Discover our roots</a>
+      <a class="btn ghost" href="#tree">Jump to the tree</a>
+    </div>
+  </div>
+  <a class="scroll-cue" href="#roots" aria-label="Scroll"><span></span></a>
+</header>
+
+<main>
+<!-- ================= ROOTS ================= -->
+<section class="sec" id="roots">
+  <div class="wrap two-col">
+    <div class="reveal">
+      <p class="eyebrow">Our roots</p>
+      <h2>Who we are, and where the thread begins</h2>
+      <p>The Lohanas are a trading community of Gujarat, Kutch and Sindh who, by tradition, trace themselves to the <b>Raghuvanshi</b> (Suryavansh) Kshatriyas — the line of Lord Rama. Community memory holds that they descend from Lav, Rama’s son, and from the fortress-city called <b>Lohkot / Lohargadh</b> on the north-western frontier.</p>
+      <p>Over centuries the family’s forebears became merchants, bankers and mariners — moving down the Indus into Sindh, and later across the Rann and the sea into Kutch and Saurashtra. Each family keeps its identity through its <b>Nuk</b> (clan), its <b>Gotra</b>, its <b>Kuldevi</b>, and the books of the hereditary genealogist, the <b>Barot</b>.</p>
+      <p class="note"><span class="tag trad">Community tradition</span> The above is the broadly shared Lohana account. Your own branch’s details are filled in below as they are confirmed — nothing is invented for us.</p>
+    </div>
+    <aside class="fcard reveal" aria-label="Family card">
+      <header><span class="seal">ૐ</span><div><p class="eyebrow">Family card</p><h3>Our identity</h3></div>
+        <button class="edit-meta admin-only" id="btnDetails2" title="Edit family details" aria-label="Edit family details"><svg viewBox="0 0 24 24"><use href="#i-pencil"/></svg></button></header>
+      <dl>
+        <div><dt>Nuk (clan)</dt><dd data-meta="nuk"></dd></div>
+        <div><dt>Gotra</dt><dd data-meta="gotra"></dd></div>
+        <div><dt>Kuldevi</dt><dd data-meta="kuldevi"></dd></div>
+        <div><dt>Ancestral Gam</dt><dd data-meta="gam"></dd></div>
+        <div><dt>Community</dt><dd data-meta="community"></dd></div>
+        <div><dt>Home today</dt><dd data-meta="location"></dd></div>
+      </dl>
+      <p class="fine">Fill these from your research — see the <a href="#research">prompt builder</a> and the <a href="#archive">archive hunt</a>.</p>
+    </aside>
+  </div>
+</section>
+
+<!-- ================= JOURNEY ================= -->
+<section class="sec dark" id="journey">
+  <div class="wrap">
+    <div class="center reveal"><p class="eyebrow">Migration timeline</p><h2>Four chapters of a very long journey</h2>
+      <p class="lead">A map of the community’s broad path. Where our own branch fits in each chapter is for us to confirm.</p></div>
+    <ol class="tl" id="timeline">
+      <li class="reveal"><span class="dot">1</span>
+        <div class="card"><p class="era">Ancient – medieval · North-west frontier</p><h3>Lohargadh &amp; the Punjab</h3>
+          <p>Tradition places the Raghuvanshi forebears at <b>Lohkot (Lohargadh)</b>, linked in memory with the Lahore region. Pressure from invasions and shifting kingdoms set families moving south along the river valleys.</p>
+          <p class="meta"><span class="tag trad">Tradition</span><span class="tag q">Ask: does our family tell of Lav, Lahore, or “Lohar-gadh”?</span></p></div></li>
+      <li class="reveal"><span class="dot">2</span>
+        <div class="card"><p class="era">Medieval · Sindh &amp; the Indus belt</p><h3>The traders of Sindh</h3>
+          <p>In Sindh, Lohana families rose as <b>merchants, bankers and administrators</b> in towns along the Indus and the coast. Devotion to <b>Jhulelal (Uderolal)</b> grew among Sindh-rooted families. Political upheavals under successive dynasties pushed families further east and south.</p>
+          <p class="meta"><span class="tag doc">Widely documented</span><span class="tag q">Ask: any Sindhi words, surnames or a town like Thatta in family talk?</span></p></div></li>
+      <li class="reveal"><span class="dot">3</span>
+        <div class="card"><p class="era">c. 12th – 19th century · Kutch &amp; Saurashtra</p><h3>Settling Kutch &amp; Halar</h3>
+          <p>Waves of Lohana families crossed the Rann and the sea into <b>Kutch</b> (Bhuj, Mandvi, Mundra, Anjar) and <b>Halar / Saurashtra</b> (Jamnagar region). Mandvi’s port tied families to trade with Arabia and East Africa. Colonial-era gazetteers describe Lohana settlements throughout.</p>
+          <p class="meta"><span class="tag doc">Widely documented</span><span class="tag q">Ask: which Gam does our Barot record for us?</span></p></div></li>
+      <li class="reveal"><span class="dot">4</span>
+        <div class="card"><p class="era">19th century – today · Modern movements</p><h3>Mumbai, Africa &amp; beyond</h3>
+          <p>Families moved to <b>Mumbai</b> and Karachi, to <b>East Africa</b> (Zanzibar, Mombasa, Nairobi, Kampala), and, from the 1960s–70s, to the UK, Canada, the USA and the Gulf. After 1947, new settlements such as Gandhidham grew in Kutch.</p>
+          <p class="meta"><span class="tag tbc">To confirm — our family</span><span class="tag q">Ask: who left first, where, and when?</span></p></div></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ================= LINEAGE ================= -->
+<section class="sec" id="lineage">
+  <div class="wrap">
+    <div class="center reveal"><p class="eyebrow">Etymology &amp; lineage</p><h2>Our name, our Gotra, our Goddess</h2>
+      <p class="lead">Four anchors of identity to pin down with the family’s Barot and elders — with what is generally known, and what we still need to learn.</p></div>
+    <div class="lgrid" id="lineageCards"></div>
+  </div>
+</section>
+
+<!-- ================= RESEARCH PROMPT ================= -->
+<section class="sec dark" id="research">
+  <div class="wrap">
+    <div class="center reveal"><p class="eyebrow">Ancestry research prompt</p><h2>Ask an AI to research our ancestry</h2>
+      <p class="lead">Fill in what you know — the full research prompt (etymology, migration, data schema, archive hunt) is built live. Copy it into any AI assistant. It is told to label every claim and never to invent facts about us.</p></div>
+    <div class="pb reveal">
+      <form class="pb-form" id="promptForm" onsubmit="return false" autocomplete="off">
+        <div class="pb-head"><h3>Family starting data</h3><span id="promptFill"></span></div>
+      </form>
+      <div class="pb-out">
+        <div class="pb-bar">
+          <span class="dots"><i></i><i></i><i></i></span><b>research-prompt.md</b>
+          <div class="pb-btns">
+            <button class="btn small" id="copyPrompt" type="button">Copy prompt</button>
+            <button class="btn small ghost" id="dlPrompt" type="button">Download</button>
+          </div>
+        </div>
+        <pre id="promptOut" tabindex="0" aria-label="Generated research prompt"></pre>
+        <div class="pb-foot">
+          <button class="btn small ghost" id="fillFromTree" type="button">↺ Fill from my family tree</button>
+          <button class="btn small ghost" id="saveToTree" type="button">Save to family card</button>
+          <button class="btn small ghost" id="resetPrompt" type="button">Clear</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ARCHIVE ================= -->
+<section class="sec" id="archive">
+  <div class="wrap two-col top">
+    <div>
+      <div class="reveal"><p class="eyebrow">Archival hunt</p><h2>Where to cross-check what we don’t know</h2></div>
+      <div class="progress reveal"><div><i id="ckBar"></i></div><span id="ckPct"></span></div>
+      <ul class="checklist" id="checklist"></ul>
+    </div>
+    <div>
+      <div class="reveal"><p class="eyebrow">Before finalising the tree</p><h2>Ask the elders</h2>
+        <p class="lead sm">Gaps in a family tree close fastest in conversation. Take these questions to every elder you can.</p></div>
+      <div id="interviews"></div>
+      <button class="btn small ghost" id="copyQs" type="button" style="margin-top:14px">Copy all questions</button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TREE ================= -->
+<section class="sec tree-sec" id="tree">
+  <div class="wrap">
+    <div class="center reveal"><p class="eyebrow">Vansh Vruksh</p><h2>The Family Tree</h2>
+      <p class="lead">Drag to move, scroll to zoom, tap anyone to read their story. Hover a person to light the thread back to our oldest ancestors.</p>
+      <div class="stats"><div><b id="statPeople">0</b><span>people</span></div><div><b id="statGen">0</b><span>generations</span></div><div><b id="statCouples">0</b><span>couples</span></div></div>
+      <p class="draft" id="draftNote" hidden>Showing your local draft. <button id="draftDiscard" class="linkish">Discard draft</button></p>
+    </div>
+  </div>
+
+  <div class="tree-shell" id="treeShell">
+    <div class="viewport" id="viewport">
+      <div class="stage" id="stage"><svg class="threads" id="threads" aria-hidden="true"></svg></div>
+    </div>
+
+    <div class="tree-tools">
+      <label class="search"><svg viewBox="0 0 24 24" width="16" height="16"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16 16l5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><input id="search" type="search" placeholder="Find a family member…" aria-label="Find a family member" autocomplete="off"></label>
+    </div>
+    <div class="zoom" role="group" aria-label="Zoom">
+      <button id="zoomIn" aria-label="Zoom in">+</button><button id="zoomOut" aria-label="Zoom out">−</button>
+      <button id="zoomFit" aria-label="Fit whole tree" title="Fit whole tree"><svg viewBox="0 0 24 24" width="18" height="18"><circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 3v4M12 17v4M3 12h4M17 12h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+      <button id="fullscreen" aria-label="Full screen" title="Full screen"><svg viewBox="0 0 24 24" width="16" height="16"><path d="M4 4h6M4 4v6M20 20h-6M20 20v-6M20 4h-6M20 4v6M4 20h6M4 20v-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+    </div>
+    <div class="admin-ribbon">Admin mode · drag a card onto another: left/right edge = sibling, centre = child</div>
+    <div class="empty" id="empty" hidden><p>The tree is waiting for its first ancestor.</p><button class="btn" id="emptyAdd">Plant the first branch</button></div>
+    <aside class="panel" id="panel" aria-live="polite"></aside>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <span class="emblem" id="secretEmblem" role="img" aria-label="Lotus">
+    <svg viewBox="0 0 64 64" width="38" height="38"><path d="M32 54V30m0 0c-8-2-14-8-14-16m14 16c8-2 14-8 14-16M32 40c-6-1-10-5-11-10m11 10c6-1 10-5 11-10" stroke="url(#gold)" stroke-width="3" fill="none" stroke-linecap="round"/></svg>
+  </span>
+  <p class="gu" lang="gu">વંશ વૃક્ષ</p>
+  <p>Made with love for the family — past, present and yet to be born.</p>
+</footer>
+
+<!-- ================= ADMIN BAR (hidden until login) ================= -->
+<div class="adminbar" id="adminBar" hidden role="toolbar" aria-label="Admin tools">
+  <span class="ab-badge">ADMIN</span>
+  <button id="btnUndo" title="Undo (Ctrl+Z)" aria-label="Undo"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M9 7L4 12l5 5M4 12h10a6 6 0 0 1 0 12" transform="translate(0 -4)" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+  <button id="btnRedo" title="Redo (Ctrl+Shift+Z)" aria-label="Redo"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M15 7l5 5-5 5M20 12H10a6 6 0 0 0 0 12" transform="translate(0 -4)" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+  <span class="ab-sep"></span>
+  <button id="btnAddRoot" class="txt">+ New root</button>
+  <button id="btnDetails" class="txt">Family details</button>
+  <details class="menu">
+    <summary class="txt">Export / Import</summary>
+    <div class="menu-pop">
+      <button id="exportJson">Backup (tree .json)</button>
+      <button id="exportFlat">Flat nodes (.json)</button>
+      <button id="exportCsv">Spreadsheet (.csv)</button>
+      <button id="exportGed">GEDCOM (.ged)</button>
+      <label class="filebtn">Import backup…<input type="file" id="importJson" accept="application/json,.json" hidden></label>
+    </div>
+  </details>
+  <span class="ab-sep"></span>
+  <span class="ab-state" id="saveState" data-s="saved" aria-live="polite"></span>
+  <button id="btnLogout" class="txt out">Exit</button>
+  <p class="ab-note" id="modeNote"></p>
+</div>
+
+<!-- ================= DIALOGS ================= -->
+<dialog id="loginDlg" aria-labelledby="loginTitle">
+  <form id="loginForm" method="dialog">
+    <div class="seal big">ૐ</div>
+    <h3 id="loginTitle">Family keeper</h3>
+    <p>Enter the admin password to edit the tree.</p>
+    <input id="pw" type="password" autocomplete="current-password" placeholder="Password" aria-label="Admin password" required>
+    <p class="err" id="loginErr" role="alert"></p>
+    <div class="dlg-btns"><button type="button" class="btn ghost" id="loginCancel">Cancel</button><button class="btn" type="submit">Enter</button></div>
+  </form>
+</dialog>
+
+<dialog id="detailsDlg" aria-labelledby="detTitle">
+  <form id="detailsForm" method="dialog">
+    <h3 id="detTitle">Family details</h3>
+    <label class="field"><span>Page title</span><input name="title" maxlength="80" placeholder="e.g. The Thakkar Family Tree"></label>
+    <label class="field"><span>Tagline</span><input name="tagline" maxlength="200"></label>
+    <div class="two">
+      <label class="field"><span>Nuk (clan)</span><input name="nuk" maxlength="80"></label>
+      <label class="field"><span>Gotra</span><input name="gotra" maxlength="80"></label>
+      <label class="field"><span>Kuldevi</span><input name="kuldevi" maxlength="80"></label>
+      <label class="field"><span>Ancestral Gam</span><input name="gam" maxlength="80"></label>
+      <label class="field"><span>Community</span><input name="community" maxlength="80"></label>
+      <label class="field"><span>Home today</span><input name="location" maxlength="80"></label>
+    </div>
+    <div class="dlg-btns"><button type="button" class="btn ghost" id="detailsCancel">Cancel</button><button class="btn" type="submit">Save</button></div>
+  </form>
+</dialog>
+
+<div id="toasts" aria-live="polite"></div>
+<script type="module" src="js/app.js"></script>
+</body>
+</html>

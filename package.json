@@ -1,0 +1,12 @@
+{
+  "name": "vansh-vruksh-family-tree",
+  "version": "1.0.0",
+  "description": "A digital, editable family tree (Vansh Vruksh) with a password-protected admin mode.",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "prompt": "node scripts/build-prompt.mjs"
+  },
+  "engines": { "node": ">=18" }
+}

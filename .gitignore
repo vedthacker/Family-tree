@@ -1,0 +1,5 @@
+node_modules/
+# Live data written by the server (tree, uploaded photos, secrets, backups)
+data/*
+!data/.gitkeep
+.DS_Store

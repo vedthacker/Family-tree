@@ -1,0 +1,509 @@
+{
+  "meta": {
+    "title": "Our Family Tree",
+    "tagline": "Every thread on this wall is a story. Here is where ours begins.",
+    "nuk": "",
+    "gotra": "",
+    "kuldevi": "",
+    "gam": "",
+    "community": "Lohana (Raghuvanshi)",
+    "location": "",
+    "updated": ""
+  },
+  "roots": [
+    {
+      "id": "u1",
+      "people": [
+        {
+          "id": "p1",
+          "name": "Grandfather (maternal side)",
+          "nick": "",
+          "gender": "M",
+          "born": "",
+          "died": "",
+          "place": "",
+          "about": "",
+          "photo": ""
+        },
+        {
+          "id": "p2",
+          "name": "Grandmother (maternal side)",
+          "nick": "",
+          "gender": "F",
+          "born": "",
+          "died": "",
+          "place": "",
+          "about": "",
+          "photo": ""
+        }
+      ],
+      "children": [
+        {
+          "id": "u2",
+          "people": [
+            {
+              "id": "p3",
+              "name": "Daughter 1",
+              "nick": "",
+              "gender": "F",
+              "born": "",
+              "died": "",
+              "place": "",
+              "about": "",
+              "photo": ""
+            },
+            {
+              "id": "p4",
+              "name": "Son-in-law 1",
+              "nick": "",
+              "gender": "M",
+              "born": "",
+              "died": "",
+              "place": "",
+              "about": "",
+              "photo": ""
+            }
+          ],
+          "children": [
+            {
+              "id": "u3",
+              "people": [
+                {
+                  "id": "p5",
+                  "name": "Grandchild 1",
+                  "nick": "",
+                  "gender": "M",
+                  "born": "",
+                  "died": "",
+                  "place": "",
+                  "about": "",
+                  "photo": ""
+                }
+              ],
+              "children": []
+            },
+            {
+              "id": "u4",
+              "people": [
+                {
+                  "id": "p6",
+                  "name": "Grandchild 2",
+                  "nick": "",
+                  "gender": "F",
+                  "born": "",
+                  "died": "",
+                  "place": "",
+                  "about": "",
+                  "photo": ""
+                }
+              ],
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "u5",
+          "people": [
+            {
+              "id": "p7",
+              "name": "Son 2",
+              "nick": "",
+              "gender": "M",
+              "born": "",
+              "died": "",
+              "place": "",
+              "about": "",
+              "photo": ""
+            },
+            {
+              "id": "p8",
+              "name": "Daughter-in-law 2",
+              "nick": "",
+              "gender": "F",
+              "born": "",
+              "died": "",
+              "place": "",
+              "about": "",
+              "photo": ""
+            }
+          ],
+          "children": [
+            {
+              "id": "u6",
+              "people": [
+                {
+                  "id": "p9",
+                  "name": "Grandchild 3",
+                  "nick": "",
+                  "gender": "F",
+                  "born": "",
+                  "died": "",
+                  "place": "",
+                  "about": "",
+                  "photo": ""
+                }
+              ],
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "u7",
+          "people": [
+            {
+              "id": "p10",
+              "name": "Daughter 3",
+              "nick": "",
+              "gender": "F",
+              "born": "",
+              "died": "",
+              "place": "",
+              "about": "",
+              "photo": ""
+            },
+            {
+              "id": "p11",
+              "name": "Son-in-law 3",
+              "nick": "",
+              "gender": "M",
+              "born": "",
+              "died": "",
+              "place": "",
+              "about": "",
+              "photo": ""
+            }
+          ],
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "u8",
+      "people": [
+        {
+          "id": "p12",
+          "name": "Dada",
+          "nick": "Patriarch",
+          "gender": "M",
+          "born": "",
+          "died": "",
+          "place": "",
+          "about": "Replace this sample text with the real story: where he was born, his work, the village he came from, the stories the family tells about him.",
+          "photo": ""
+        },
+        {
+          "id": "p13",
+          "name": "Dadi",
+          "nick": "Matriarch",
+          "gender": "F",
+          "born": "",
+          "died": "",
+          "place": "",
+          "about": "",
+          "photo": ""
+        }
+      ],
+      "children": [
+        {
+          "id": "u9",
+          "people": [
+            {
+              "id": "p14",
+              "name": "Son 1",
+              "nick": "",
+              "gender": "M",
+              "born": "",
+              "died": "",
+              "place": "",
+              "about": "",
+              "photo": ""
+            },
+            {
+              "id": "p15",
+              "name": "Daughter-in-law 1",
+              "nick": "",
+              "gender": "F",
+              "born": "",
+              "died": "",
+              "place": "",
+              "about": "",
+              "photo": ""
+            }
+          ],
+          "children": [
+            {
+              "id": "u10",
+              "people": [
+                {
+                  "id": "p16",
+                  "name": "Grandchild 4",
+                  "nick": "",
+                  "gender": "M",
+                  "born": "",
+                  "died": "",
+                  "place": "",
+                  "about": "",
+                  "photo": ""
+                }
+              ],
+              "children": []
+            },
+            {
+              "id": "u11",
+              "people": [
+                {
+                  "id": "p17",
+                  "name": "Grandchild 5",
+                  "nick": "",
+                  "gender": "F",
+                  "born": "",
+                  "died": "",
+                  "place": "",
+                  "about": "",
+                  "photo": ""
+                }
+              ],
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "u12",
+          "people": [
+            {
+              "id": "p18",
+              "name": "Daughter 2",
+              "nick": "",
+              "gender": "F",
+              "born": "",
+              "died": "",
+              "place": "",
+              "about": "",
+              "photo": ""
+            },
+            {
+              "id": "p19",
+              "name": "Son-in-law 2",
+              "nick": "",
+              "gender": "M",
+              "born": "",
+              "died": "",
+              "place": "",
+              "about": "",
+              "photo": ""
+            }
+          ],
+          "children": [
+            {
+              "id": "u13",
+              "people": [
+                {
+                  "id": "p20",
+                  "name": "Grandchild 6",
+                  "nick": "",
+                  "gender": "M",
+                  "born": "",
+                  "died": "",
+                  "place": "",
+                  "about": "",
+                  "photo": ""
+                }
+              ],
+              "children": []
+            },
+            {
+              "id": "u14",
+              "people": [
+                {
+                  "id": "p21",
+                  "name": "Grandchild 7",
+                  "nick": "",
+                  "gender": "F",
+                  "born": "",
+                  "died": "",
+                  "place": "",
+                  "about": "",
+                  "photo": ""
+                }
+              ],
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "u15",
+          "people": [
+            {
+              "id": "p22",
+              "name": "Son 3",
+              "nick": "",
+              "gender": "M",
+              "born": "",
+              "died": "",
+              "place": "",
+              "about": "",
+              "photo": ""
+            },
+            {
+              "id": "p23",
+              "name": "Daughter-in-law 3",
+              "nick": "",
+              "gender": "F",
+              "born": "",
+              "died": "",
+              "place": "",
+              "about": "",
+              "photo": ""
+            }
+          ],
+          "children": [
+            {
+              "id": "u16",
+              "people": [
+                {
+                  "id": "p24",
+                  "name": "Grandchild 8",
+                  "nick": "",
+                  "gender": "M",
+                  "born": "",
+                  "died": "",
+                  "place": "",
+                  "about": "",
+                  "photo": ""
+                }
+              ],
+              "children": [
+                {
+                  "id": "u17",
+                  "people": [
+                    {
+                      "id": "p25",
+                      "name": "Great-grandchild 1",
+                      "nick": "",
+                      "gender": "F",
+                      "born": "",
+                      "died": "",
+                      "place": "",
+                      "about": "",
+                      "photo": ""
+                    }
+                  ],
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "u18",
+          "people": [
+            {
+              "id": "p26",
+              "name": "Daughter 4",
+              "nick": "",
+              "gender": "F",
+              "born": "",
+              "died": "",
+              "place": "",
+              "about": "",
+              "photo": ""
+            },
+            {
+              "id": "p27",
+              "name": "Son-in-law 4",
+              "nick": "",
+              "gender": "M",
+              "born": "",
+              "died": "",
+              "place": "",
+              "about": "",
+              "photo": ""
+            }
+          ],
+          "children": [
+            {
+              "id": "u19",
+              "people": [
+                {
+                  "id": "p28",
+                  "name": "Grandchild 9",
+                  "nick": "",
+                  "gender": "F",
+                  "born": "",
+                  "died": "",
+                  "place": "",
+                  "about": "",
+                  "photo": ""
+                }
+              ],
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "u20",
+          "people": [
+            {
+              "id": "p29",
+              "name": "Son 5",
+              "nick": "",
+              "gender": "M",
+              "born": "",
+              "died": "",
+              "place": "",
+              "about": "",
+              "photo": ""
+            },
+            {
+              "id": "p30",
+              "name": "Daughter-in-law 5",
+              "nick": "",
+              "gender": "F",
+              "born": "",
+              "died": "",
+              "place": "",
+              "about": "",
+              "photo": ""
+            }
+          ],
+          "children": [
+            {
+              "id": "u21",
+              "people": [
+                {
+                  "id": "p31",
+                  "name": "Grandchild 10",
+                  "nick": "",
+                  "gender": "M",
+                  "born": "",
+                  "died": "",
+                  "place": "",
+                  "about": "",
+                  "photo": ""
+                }
+              ],
+              "children": []
+            },
+            {
+              "id": "u22",
+              "people": [
+                {
+                  "id": "p32",
+                  "name": "Grandchild 11",
+                  "nick": "",
+                  "gender": "F",
+                  "born": "",
+                  "died": "",
+                  "place": "",
+                  "about": "",
+                  "photo": ""
+                }
+              ],
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
