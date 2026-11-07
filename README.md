@@ -58,6 +58,10 @@ The prompt tells the AI to label every claim *documented / tradition / speculati
 
 ## Deploying
 
+**Option A — GitHub Pages (free, view-only site for the family).** `.github/workflows/pages.yml` publishes `public/` automatically on every push. One-time: repo **Settings → Pages → Source: GitHub Actions**. Edits are made in static mode (see below) and published by committing the exported JSON.
+
+**Option B — Render (family views, only you can edit and save online).** Create a *Blueprint* from this repo (`render.yaml`), enter your `ADMIN_PASSWORD` when asked. A persistent disk (paid plan) keeps the tree and photos.
+
 The site needs a tiny always-on Node process so that only the admin can save.
 
 * **Render / Railway / Fly.io / any VPS**: start command `node server.js`; set `ADMIN_PASSWORD`; attach a **persistent disk/volume** and point `DATA_DIR` at it (the tree, photos and backups live there). Behind a proxy set `TRUST_PROXY=1`. Serve over HTTPS.

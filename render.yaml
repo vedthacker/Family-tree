@@ -1,0 +1,24 @@
+# Render Blueprint: full server mode (only the admin can save; everyone else views).
+# Persistent disks need a paid instance type; on a free plan the filesystem resets on every deploy/restart.
+services:
+  - type: web
+    name: vansh-vruksh
+    runtime: node
+    plan: starter
+    buildCommand: echo "no build step"
+    startCommand: node server.js
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: ADMIN_PASSWORD
+        sync: false        # Render asks you for this when you create the service
+      - key: SESSION_SECRET
+        generateValue: true
+      - key: TRUST_PROXY
+        value: "1"
+      - key: DATA_DIR
+        value: /var/data
+    disk:
+      name: family-data
+      mountPath: /var/data
+      sizeGB: 1
