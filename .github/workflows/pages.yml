@@ -2,8 +2,7 @@
 # everyone can view it; edits are exported from the admin page and committed to public/data/family.json.
 name: Deploy to GitHub Pages
 on:
-  push:
-  workflow_dispatch:
+  workflow_dispatch:   # manual only; enable Pages (Source: GitHub Actions) first, then run it from the Actions tab
 permissions:
   contents: read
   pages: write
